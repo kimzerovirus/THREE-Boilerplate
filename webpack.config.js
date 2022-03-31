@@ -32,4 +32,11 @@ module.exports = {
 		port: 5000,
 		historyApiFallback: true,
 	},
+
+	resolve: {
+		fallback: {
+			fs: false,
+			path: false, // ammo.js seems to also use path
+		},
+	},
 };
